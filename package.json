@@ -1,0 +1,40 @@
+{
+  "author": "Matt McKellar-Spence",
+  "bugs": {
+    "url": "https://github.com/MattMS/flogging_redis.js/issues"
+  },
+  "dependencies": {
+    "redis": "^2.6.2",
+    "through2": "^2.0.1"
+  },
+  "description": "Redis output for flogging.js.",
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "coffeetape": "^1.0.1",
+    "end-of-stream": "^1.1.0",
+    "flogging.stream_base": "^0.3.0",
+    "ramped.pipe": "^0.2.0",
+    "rimraf": "^2.5.4"
+  },
+  "homepage": "https://github.com/MattMS/flogging_redis.js#readme",
+  "keywords": [
+    "functional",
+    "logging",
+    "Redis",
+    "streaming",
+    "streams"
+  ],
+  "license": "MIT",
+  "main": "main.js",
+  "name": "flogging_redis",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattMS/flogging_redis.js.git"
+  },
+  "scripts": {
+    "clean": "rimraf main.js",
+    "prepublish": "coffee -c main.coffee.md",
+    "test": "coffeetape test.coffee.md"
+  },
+  "version": "0.1.0"
+}
